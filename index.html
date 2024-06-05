@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yanwar Portofolio RevoU</title>
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/logo.png">
+
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+        <!--Icon Library-->
+        <script src="https://kit.fontawesome.com/f78891a75a.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="top">
+        <!--tombol Back to top-->
+        <button onclick="topFunction()" id="b2t" title="Back to top"><i class="fa-solid fa-angles-up"></i><br>Back<br>to top</button>
+
+        <!--navigasi menu-->
+        <nav class="nav-wrapper">
+            <div class="logo-area">
+                <a href="/27-may-24-pendrarara">
+                    <img class="logo-icon" src="assets/logo.png">
+                
+                </a>
+            </div>
+            <section>
+                <a class="nav-item" href="#beranda">Beranda</a>
+                <a class="nav-item" href="#profil">Profil</a>
+                <a class="nav-item" href="#hubungi">Hubungi Kami</a> 
+            </section>
+        </nav>
+
+        <!--konten utama-->
+        <main>
+            <!--beranda-->
+            <section class="main-sctn">
+                <header>
+                    <h1 id="beranda" style="margin-block-end: 1px;">Halo <span id="sayhi" class="sapanama">Pulan</span>, siap belajar coding?</h1>
+                    <button id="ubahnama" class="tombol-ubahnama">Bukan namamu? Klik disini untuk ganti nama</button>
+                </header>
+                <article>
+                    <p style="font-size: x-large; text-align: center;">Selamat datang di website <b class="sapanama">Latihan Pertama RevoU </b></p>
+                    <!-- <div class="banner-container"></div> -->
+                    <div>
+                        <img class="img-slideshow" src="assets/banner.png">
+                        <img class="img-slideshow" src="assets/banner1.jpg">
+                        <img class="img-slideshow" src="assets/banner2.png">
+                        <img class="img-slideshow" src="assets/banner3.png">
+                        <img class="img-slideshow" src="assets/banner4.png">
+                        <div class="img-slide-button">
+                            <button onclick="plusDivs(-1)">Previous</button>
+                            <button onclick="plusDivs(1)">Next</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <hr>
+            <!--profil-->
+            <section class="main-sctn">
+                <header>
+                    <h1 id="profil">Profil</h1>
+                </header>
+                <article>
+                    <div>
+                        <p style="font-size: large; text-align: justify;"><b class="sapanama">RevoU</b> ini adalah <b>sekolah online</b> (EdTech) yang membekali para murid dengan keterampilan digital yang lagi in-demand di zaman industri teknologi 4.0 saat ini.
+
+                        <p style="font-size: large; text-align: justify;">Sampai sekarang, RevoU udah berhasil bantuin <b>10.000+</b> alumni utk mendapatkan karir impian, maupun mengembangkan bisnis mereka di bidang digital!</p>
+                        
+                    </div>
+                </article>
+            </section>
+            <hr>
+
+            <!--hubungi kami-->
+            <section class="main-sctn">
+                <header>
+                    <h1 id="hubungi">Hubungi Kami</h1>
+                </header>
+                <article>
+                    <div>
+                        <p>Kamu punya pertanyaan? Hubungi kami dengan mengisi form dibawah ini:</p>
+                    </div>
+                </article>
+
+                <section class="form-and-result">
+                    <section>
+                        <table> 
+                            <form name="contus" onsubmit="return validateForm()"> 
+                                <tr> 
+                                    <td> 
+                                        <label for="nama" id="nama">Nama Lengkap</label> 
+                                    </td> 
+                                    <td>:</td>
+                                    <td>
+                                        <input type="text" size="30" name="nama" placeholder="Tulis namamu disini"/> 
+                                    </td> 
+                                </tr> 
+                                <tr> 
+                                    <td>
+                                        <label for="nohp" id="nohp">No.Handphone</label> 
+                                    </td>
+                                    <td>:</td>
+                                    <td>
+                                        <input type="telnum" size="30" id="nohp" name="nohp" placeholder="Format: 62821xxx"/> 
+                                    </td> 
+                                </tr>
+                                <tr> 
+                                    <td>
+                                        <label for="email" id="email">Email Aktif</label> 
+                                    </td>
+                                    <td>:</td>
+                                    <td>
+                                        <input type="email" size="30" name="email" placeholder="nama@email.com" /> 
+                                    </td> 
+                                </tr> 
+                                <tr> 
+                                    <td style="display: flex; flex-direction: row; align-items: start;">
+                                        <label for="pilihankursus" id="pilihankursus">Kelas yang diminati</label> 
+                                    </td>
+                                    <td style="vertical-align: top;">:</td>
+                                    <td>
+                                        <input type="radio" id="reguler" name="pilihkursus" value="Full-stack Digital Marketing" />
+                                        <label for="reguler">Full-stack Digital Marketing</label><br>
+                                        <input type="radio" id="cruiseship" name="pilihkursus" value="Full-stack Data Analytics"/>
+                                        <label for="cruiseship">Full-stack Data Analytics</label><br>
+                                        <input type="radio" id="private" name="pilihkursus" value="Full-stack Product Management"/>
+                                        <label for="private">Full-stack Product Management</label><br>
+                                        <input type="radio" id="undecided" name="pilihkursus" value="Full-stack Software Engineering"/>
+                                        <label for="undecided">Full-stack Software Engineering</label>
+                                    </td> 
+                                </tr>
+                                <tr> 
+                                    <td style="display: flex; flex-direction: row; align-items: start;">
+                                        <label for="pesan" id="pesan">Pesan</label> 
+                                    </td>
+                                    <td style="vertical-align: top;">:</td>
+                                    <td>
+                                        <textarea rows="4" style="width: 98%" name="pesan" placeholder="Tulis pesan/pertanyaanmu disini"></textarea>
+                                    </td> 
+                                </tr> 
+                                <tr>
+                                    <td colspan="3">
+                                        <button type="submit" class="tombol-form" id="kirimform">Submit Sekarang!</button>
+                                    </td>
+                                </tr>
+                            </form> 
+                        </table>
+                    </section>
+
+                    <section class="result-container">
+                        <div class="tampilkan-result" id="show-result">
+                            <p><b>Data kamu dibawah ini <mark><span id="error-warning"></span></mark></b></p>
+                            <p>Nama : <span id="sender-nama"></span></p>
+                            <p>No.HP : <span id="sender-nohp"></span></p>
+                            <p>Email : <span id="sender-email"></span></p>
+                            <p>Kelas yang diminati : <span id="sender-pilihkursus"></span></p>
+                            <p>Pesan/Pertanyaan : <span id="sender-pesan"></span></p>
+                            <p id="sukses-submit"></p>
+                        </div>
+                        <div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </main>
+
+        <!--footer & credit-->
+        <footer class="footer">
+
+            
+            <!--credit to creator-->
+            <section class="creator">Dibuat oleh &nbsp<a href="https://www.linkedin.com/in/yanwar-pebriawan-ba31a6276/" target="_blank">Yanwar Pebriawan</a></section>
+        </footer>
+
+    <!--JS-->
+    <script src="js/script.js"></script>
+    </body>
+</html>
